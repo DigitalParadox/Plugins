@@ -6,6 +6,7 @@
     <Company>Digital Paradox</Company>
     <Description>Base Plugin Interface for Digital Paradox plugin discovery</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>digitalparadox-plugins-sdk</PackageId>
   </PropertyGroup>
 
 </Project>
