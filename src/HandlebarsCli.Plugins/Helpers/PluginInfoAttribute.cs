@@ -9,7 +9,7 @@ namespace DigitalParadox.HandlebarsCli.Plugins.Helpers
         public string Description { get; set; }
         public string Name { get; set; }
         public string DisplayName { get; set; }
-        public HelperType HelperType { get; set; } = HelperType.Inline;
+  
 
         public string GetDisplayName(object obj, string template)
         {
