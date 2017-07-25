@@ -1,4 +1,4 @@
-﻿namespace DigitalParadox.HandlebarsCli.Plugins
+﻿namespace DigitalParadox.Plugins
 {
     public interface IPlugin
     {

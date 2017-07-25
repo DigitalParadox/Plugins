@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace DigitalParadox.HandlebarsCli.Plugins.Helpers
+namespace DigitalParadox.Plugins
 {
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface | AttributeTargets.Struct, Inherited = false)]
     public class PluginInfoAttribute : Attribute

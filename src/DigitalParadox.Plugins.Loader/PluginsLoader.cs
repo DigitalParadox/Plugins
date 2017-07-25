@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using DigitalParadox.HandlebarsCli.Plugins.Helpers;
 using DigitalParadox.Utilities.AssemblyLoader;
-
-namespace DigitalParadox.HandlebarsCli.Plugins
+//TODO : add System Configuration Support to aid/filter  discovery locations
+namespace DigitalParadox.Plugins
 {
     public static class PluginsLoader
     {
