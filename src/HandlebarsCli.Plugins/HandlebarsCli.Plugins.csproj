@@ -2,6 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>DigitalParadox.Plugins</PackageId>
+    <Authors>Chris McGrath</Authors>
+    <Company>Digital Paradox</Company>
+    <Product>DigitalParadox.Plugins</Product>
+    <Description>Plugin Discovery and loading framework</Description>
+    <RepositoryUrl>https://github.com/DigitalParadox/Plugins.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/DigitalParadox/Plugins</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
