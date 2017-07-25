@@ -17,4 +17,8 @@
     <PackageReference Include="DigitalParadox.Utilities.AssemblyLoader" Version="1.0.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalParadox.Plugins\DigitalParadox.Plugins.csproj" />
+  </ItemGroup>
+
 </Project>
