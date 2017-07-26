@@ -4,7 +4,7 @@ using System.Linq;
 using System.Reflection;
 using DigitalParadox.Utilities.AssemblyLoader;
 //TODO : add System Configuration Support to aid/filter  discovery locations
-namespace DigitalParadox.Plugins
+namespace DigitalParadox.Plugins.Loader
 {
     public static class PluginsLoader
     {
