@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using DigitalParadox.Utilities.AssemblyLoader;
+using System.IO;
 //TODO : add System Configuration Support to aid/filter  discovery locations
 namespace DigitalParadox.Plugins.Loader
 {
@@ -20,10 +21,14 @@ namespace DigitalParadox.Plugins.Loader
             return AssemblyLoader.GetTypes<T>();
         }
 
-        public static IDictionary<string, Type> GetPlugins<T>()
+        public static IDictionary<string, Type> GetPlugins<T>(DirectoryInfo di = null)
             where T : IPlugin
         {
-            var types = AssemblyLoader.GetAssemblies<T>().GetPluginCollection<T>();
+            IEnumerable<Type> types = di == null ? 
+            
+                AssemblyLoader.GetAppDomainAssemblies<T>().GetPluginCollection<T>() :
+                AssemblyLoader.GetAssemblies<T>(di).GetPluginCollection<T>();
+            
 
             var dictionary = new Dictionary<string, Type>();
 
@@ -35,6 +40,7 @@ namespace DigitalParadox.Plugins.Loader
 
                 dictionary.Add(type.FullName, type);
             }
+
             return dictionary;
         }
 
