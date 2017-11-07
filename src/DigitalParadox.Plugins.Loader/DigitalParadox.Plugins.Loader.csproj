@@ -11,6 +11,8 @@
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/DigitalParadox/Plugins</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0.0</Version>
+    <PackageVersion>1.0.0.0</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
