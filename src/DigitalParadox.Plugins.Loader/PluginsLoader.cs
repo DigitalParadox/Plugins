@@ -30,6 +30,8 @@ namespace DigitalParadox.Plugins.Loader
         public static IDictionary<string, Type> GetPlugins<T>(DirectoryInfo di = null)
             where T : IPlugin
         {
+            Stopwatch timer = Stopwatch.StartNew();
+            
             IEnumerable<Type> types = di == null ? 
             
                 AssemblyLoader.GetAppDomainAssemblies<T>().GetPluginCollection<T>() :
